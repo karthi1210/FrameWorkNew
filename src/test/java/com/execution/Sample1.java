@@ -2,8 +2,6 @@ package com.execution;
 
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.ie.InternetExplorerDriver;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -27,6 +25,11 @@ public class Sample1 extends BaseClass{
 			winMax();
 		}
 		loadUrl("https://en-gb.facebook.com/");
+	}
+	
+	@Test
+	private void testCase2() {
+		System.out.println("karthik");
 	}
 
 }
