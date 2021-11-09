@@ -135,7 +135,7 @@ public class BaseClass {
 		
 		File src = takesScreenshot.getScreenshotAs(OutputType.FILE);
 		
-		File des = new File(System.getProperty("user.dir")+"\\ScreenShots\\"+filename); 
+		File des = new File(System.getProperty("user.dir")+"\\target\\Screenshots"+filename); 
 		
 		FileUtils.copyFile(src, des);
 		
