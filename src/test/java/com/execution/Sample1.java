@@ -1,12 +1,32 @@
 package com.execution;
 
-public class Sample1 {
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
+
+import com.utilies.BaseClass;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class Sample1 extends BaseClass{
 	
-	public static void main(String[] args) {
-		
-		System.out.println("karthik");
-		System.out.println("Sofia");
-		
+	@Parameters({"browser"})
+	@Test
+	private void testCase1(String s) {
+		if(s.equals("Chrome")) {
+			WebDriverManager.chromedriver().setup();
+			driver = new ChromeDriver();
+			winMax();
+		}
+		else {
+			WebDriverManager.edgedriver().setup();
+			driver = new EdgeDriver();
+			winMax();
+		}
+		loadUrl("https://en-gb.facebook.com/");
 	}
 
 }
