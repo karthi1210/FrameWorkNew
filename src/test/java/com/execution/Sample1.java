@@ -29,7 +29,13 @@ public class Sample1 extends BaseClass{
 	
 	@Test
 	private void testCase2() {
+		
 		System.out.println("karthik");
 	}
+	
+	@Test
+	private void testCase3() {
 
+		System.out.println("sofia");
+	}
 }
