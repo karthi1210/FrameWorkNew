@@ -28,5 +28,9 @@ public class Sample1 extends BaseClass{
 		}
 		loadUrl("https://en-gb.facebook.com/");
 	}
-
+	
+	@Test
+	private void testCase2() {
+		System.out.println("sofia");
+	}
 }
